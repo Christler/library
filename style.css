@@ -1,0 +1,14 @@
+.table{
+    text-align: center;
+    font-size: large;
+}
+
+.modal-body{
+    font-size: large;
+}
+
+#title, #author, #numPages{
+    width: 100%;
+}
+  
+  
