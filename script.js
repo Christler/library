@@ -54,10 +54,8 @@ function showBooks(){
     let pages = document.createElement('td')
     let read = document.createElement('td')
     
-    let removeBtn = document.createElement('div')
-    removeBtn.innerHTML = `<span style="color: Tomato;">
-                                <i class="fas fa-trash-alt"></i>
-                           </span>`
+    let removeBtn = document.createElement('i')
+    removeBtn.setAttribute("class", "fas fa-trash-alt")
     removeBtn.addEventListener("click", removeBook)
     
     let checkBox = document.createElement('input')
@@ -101,7 +99,7 @@ function validateForm(){
   let read = readInput.checked
   
   if(title === "" || author === "" || pages === ""){
-    //alert("Please fill out required fields")
+    alert("Please fill out required fields")
   }else{
     //if input good add book to library and clear form
     let book = new Book(title, author, pages, read)
@@ -119,8 +117,8 @@ function clearForm(){
 }
 
 const theHobbit = new Book("The Hobbit", "J.R.R. Tolkien", 295, true)
-addBookToLibrary(theHobbit)
 const fightClub = new Book("Fight Club", "Chuck Palahniuk", 160, false)
+addBookToLibrary(theHobbit)
 addBookToLibrary(fightClub)
 
 showBooks()

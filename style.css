@@ -1,6 +1,20 @@
+body{
+    background-color: #222831 !important;
+    color: #dddddd !important;
+}
+
+.fa-book-open{
+    font-size: 32px;
+    padding: 10px;
+}
+
 .table{
     text-align: center;
     font-size: large;
+}
+
+.modal-content{
+    background-color: #30475E !important;
 }
 
 .modal-body{
@@ -11,4 +25,14 @@
     width: 100%;
 }
   
-  
+td{
+    font-size: 24px;
+}
+
+i{
+    color: #f05454;
+}
+
+i:hover{
+    cursor: pointer;
+}
