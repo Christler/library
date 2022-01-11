@@ -21,16 +21,17 @@ closeModal.onclick = function() {
   modal.style.display = "none";
 }
 
-function Book(title, author, numPages, read){
-  this.title = title
-  this.author = author
-  this.numPages = numPages
-  this.read = read
-}
+class Book {
+  constructor(title, author, numPages, read){
+    this.title = title
+    this.author = author
+    this.numPages = numPages
+    this.read = read
+  }
 
-Book.prototype.info = function(){
-    let info = [this.title, this.author, this.numPages, this.read]
-    return info
+  info(){
+    return [this.title, this.author, this.numPages, this.read]
+  }
 }
 
 function addBookToLibrary(book) {
